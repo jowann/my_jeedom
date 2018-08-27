@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MyJeedom' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MyJeedom
+  pod 'RxSwift', '4.2.0'
+  pod 'RxCocoa', '4.2.0'
+  pod 'RxAlamofire', '4.2.0'
+  pod 'Alamofire', '4.7.3'
+  pod 'KeychainSwift', '11.0.0'
+  pod 'RxDataSources', '3.0.2'
+  target 'MyJeedomTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MyJeedomUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  platform :ios, '10.0'
+end

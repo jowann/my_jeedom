@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E8F688221237C5400EDC74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F688121237C5400EDC74A /* AppDelegate.swift */; };
+		1E8F688421237C5400EDC74A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F688321237C5400EDC74A /* MainViewController.swift */; };
+		1E8F688721237C5400EDC74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8F688521237C5400EDC74A /* Main.storyboard */; };
+		1E8F688921237C5700EDC74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8F688821237C5700EDC74A /* Assets.xcassets */; };
+		1E8F688C21237C5700EDC74A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8F688A21237C5700EDC74A /* LaunchScreen.storyboard */; };
+		1E8F689721237C5800EDC74A /* MyJeedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F689621237C5800EDC74A /* MyJeedomTests.swift */; };
+		1E8F68A221237C5800EDC74A /* MyJeedomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F68A121237C5800EDC74A /* MyJeedomUITests.swift */; };
+		1EEC3A0E2123854C00A01683 /* RAMStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A052123854C00A01683 /* RAMStorage.swift */; };
+		1EEC3A0F2123854C00A01683 /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A062123854C00A01683 /* KeyChainStorage.swift */; };
+		1EEC3A102123854C00A01683 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A072123854C00A01683 /* UserDefaultsStorage.swift */; };
+		1EEC3A112123854C00A01683 /* KeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A082123854C00A01683 /* KeyStorage.swift */; };
+		1EEC3A122123854C00A01683 /* FromDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A0A2123854C00A01683 /* FromDataStorage.swift */; };
+		1EEC3A132123854C00A01683 /* AutoSyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A0B2123854C00A01683 /* AutoSyncStorage.swift */; };
+		1EEC3A142123854C00A01683 /* DrawerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A0C2123854C00A01683 /* DrawerStorage.swift */; };
+		1EEC3A152123854C00A01683 /* KeyStorageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A0D2123854C00A01683 /* KeyStorageFactory.swift */; };
+		1EEC3A17212386D500A01683 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A16212386D500A01683 /* DataProvider.swift */; };
+		1EEC3A1A2123878500A01683 /* UserPreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A192123878500A01683 /* UserPreferencesStorage.swift */; };
+		1EEC3A1F2123882400A01683 /* UserPreferencesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A1E2123882400A01683 /* UserPreferencesDto.swift */; };
+		1EEC3A212123892D00A01683 /* UserPreferencesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A202123892D00A01683 /* UserPreferencesDataProvider.swift */; };
+		1EEC3A24212394E600A01683 /* UserPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A23212394E600A01683 /* UserPreferencesViewController.swift */; };
+		1EEC3A2621239EB800A01683 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A2521239EB800A01683 /* CustomError.swift */; };
+		1EEC3A292124CDF800A01683 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A282124CDF800A01683 /* MainViewModel.swift */; };
+		1EEC3A2C2124D01600A01683 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A2B2124D01600A01683 /* MainCoordinator.swift */; };
+		1EEC3A302124D4E300A01683 /* SegueContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A2E2124D4E300A01683 /* SegueContext.swift */; };
+		1EEC3A312124D4E300A01683 /* UIViewController+segueContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A2F2124D4E300A01683 /* UIViewController+segueContext.swift */; };
+		1EEC3A332124D61100A01683 /* UserPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A322124D61100A01683 /* UserPreferencesViewModel.swift */; };
+		1EEC3A352124DA5000A01683 /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A342124DA5000A01683 /* RxViewModel.swift */; };
+		1EEC3A382124DF0700A01683 /* RetrieveAllDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A372124DF0700A01683 /* RetrieveAllDataUseCase.swift */; };
+		1EEC3A3A2124DF1900A01683 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A392124DF1900A01683 /* UseCase.swift */; };
+		1EEC3A3C2124DFAE00A01683 /* ObjectDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A3B2124DFAE00A01683 /* ObjectDto.swift */; };
+		1EEC3A3E2124E20C00A01683 /* JeedomServiceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A3D2124E20C00A01683 /* JeedomServiceUseCase.swift */; };
+		1EEC3A402124E94C00A01683 /* JeedomDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A3F2124E94C00A01683 /* JeedomDataProvider.swift */; };
+		1EEC3A422126301200A01683 /* EquipmentDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A412126301200A01683 /* EquipmentDto.swift */; };
+		1EEC3A44212630AA00A01683 /* CommandDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A43212630AA00A01683 /* CommandDto.swift */; };
+		1EEC3A46212726A300A01683 /* CommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A45212726A300A01683 /* CommandsViewController.swift */; };
+		1EEC3A482127272800A01683 /* CommandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A472127272800A01683 /* CommandsViewModel.swift */; };
+		1EEC3A4A2131FEF200A01683 /* CommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A492131FEF200A01683 /* CommandViewModel.swift */; };
+		1EEC3A4C2132DC7C00A01683 /* PerformCommandUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A4B2132DC7C00A01683 /* PerformCommandUseCase.swift */; };
+		1EEC3A502132DCFB00A01683 /* VoidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A4F2132DCFB00A01683 /* VoidResponse.swift */; };
+		1EEC3A53213341C500A01683 /* ObservableType+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A52213341C500A01683 /* ObservableType+utils.swift */; };
+		1EEC3A552133438300A01683 /* String+queryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A542133438300A01683 /* String+queryParameters.swift */; };
+		1EEC3A57213343C500A01683 /* String+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC3A56213343C500A01683 /* String+utils.swift */; };
+		4D643C5CA247B53C8753E085 /* Pods_MyJeedomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9555094C8D1FEC5BB62EE61 /* Pods_MyJeedomTests.framework */; };
+		9BE4C73DF83E9790EB0FF253 /* Pods_MyJeedom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5446869AFEC0CA1EAED9CA /* Pods_MyJeedom.framework */; };
+		BCC8F37C914DF1BE026A46AF /* Pods_MyJeedomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA22AF1A052ACA8136B250F /* Pods_MyJeedomUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E8F689321237C5800EDC74A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E8F687621237C5400EDC74A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E8F687D21237C5400EDC74A;
+			remoteInfo = MyJeedom;
+		};
+		1E8F689E21237C5800EDC74A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E8F687621237C5400EDC74A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E8F687D21237C5400EDC74A;
+			remoteInfo = MyJeedom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E8F687E21237C5400EDC74A /* MyJeedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyJeedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8F688121237C5400EDC74A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E8F688321237C5400EDC74A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1E8F688621237C5400EDC74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E8F688821237C5700EDC74A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E8F688B21237C5700EDC74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E8F688D21237C5700EDC74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8F689221237C5800EDC74A /* MyJeedomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyJeedomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8F689621237C5800EDC74A /* MyJeedomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJeedomTests.swift; sourceTree = "<group>"; };
+		1E8F689821237C5800EDC74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8F689D21237C5800EDC74A /* MyJeedomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyJeedomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8F68A121237C5800EDC74A /* MyJeedomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJeedomUITests.swift; sourceTree = "<group>"; };
+		1E8F68A321237C5800EDC74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEC3A052123854C00A01683 /* RAMStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMStorage.swift; sourceTree = "<group>"; };
+		1EEC3A062123854C00A01683 /* KeyChainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
+		1EEC3A072123854C00A01683 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		1EEC3A082123854C00A01683 /* KeyStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStorage.swift; sourceTree = "<group>"; };
+		1EEC3A0A2123854C00A01683 /* FromDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromDataStorage.swift; sourceTree = "<group>"; };
+		1EEC3A0B2123854C00A01683 /* AutoSyncStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSyncStorage.swift; sourceTree = "<group>"; };
+		1EEC3A0C2123854C00A01683 /* DrawerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerStorage.swift; sourceTree = "<group>"; };
+		1EEC3A0D2123854C00A01683 /* KeyStorageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStorageFactory.swift; sourceTree = "<group>"; };
+		1EEC3A16212386D500A01683 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		1EEC3A192123878500A01683 /* UserPreferencesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesStorage.swift; sourceTree = "<group>"; };
+		1EEC3A1E2123882400A01683 /* UserPreferencesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesDto.swift; sourceTree = "<group>"; };
+		1EEC3A202123892D00A01683 /* UserPreferencesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesDataProvider.swift; sourceTree = "<group>"; };
+		1EEC3A23212394E600A01683 /* UserPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewController.swift; sourceTree = "<group>"; };
+		1EEC3A2521239EB800A01683 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		1EEC3A282124CDF800A01683 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1EEC3A2B2124D01600A01683 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1EEC3A2E2124D4E300A01683 /* SegueContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueContext.swift; sourceTree = "<group>"; };
+		1EEC3A2F2124D4E300A01683 /* UIViewController+segueContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+segueContext.swift"; sourceTree = "<group>"; };
+		1EEC3A322124D61100A01683 /* UserPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewModel.swift; sourceTree = "<group>"; };
+		1EEC3A342124DA5000A01683 /* RxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewModel.swift; sourceTree = "<group>"; };
+		1EEC3A372124DF0700A01683 /* RetrieveAllDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveAllDataUseCase.swift; sourceTree = "<group>"; };
+		1EEC3A392124DF1900A01683 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		1EEC3A3B2124DFAE00A01683 /* ObjectDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDto.swift; sourceTree = "<group>"; };
+		1EEC3A3D2124E20C00A01683 /* JeedomServiceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeedomServiceUseCase.swift; sourceTree = "<group>"; };
+		1EEC3A3F2124E94C00A01683 /* JeedomDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeedomDataProvider.swift; sourceTree = "<group>"; };
+		1EEC3A412126301200A01683 /* EquipmentDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDto.swift; sourceTree = "<group>"; };
+		1EEC3A43212630AA00A01683 /* CommandDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDto.swift; sourceTree = "<group>"; };
+		1EEC3A45212726A300A01683 /* CommandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsViewController.swift; sourceTree = "<group>"; };
+		1EEC3A472127272800A01683 /* CommandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsViewModel.swift; sourceTree = "<group>"; };
+		1EEC3A492131FEF200A01683 /* CommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewModel.swift; sourceTree = "<group>"; };
+		1EEC3A4B2132DC7C00A01683 /* PerformCommandUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformCommandUseCase.swift; sourceTree = "<group>"; };
+		1EEC3A4F2132DCFB00A01683 /* VoidResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidResponse.swift; sourceTree = "<group>"; };
+		1EEC3A52213341C500A01683 /* ObservableType+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+utils.swift"; sourceTree = "<group>"; };
+		1EEC3A542133438300A01683 /* String+queryParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+queryParameters.swift"; sourceTree = "<group>"; };
+		1EEC3A56213343C500A01683 /* String+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+utils.swift"; sourceTree = "<group>"; };
+		2E72C73A1163A6C672B1D0D5 /* Pods-MyJeedomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJeedomTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyJeedomTests/Pods-MyJeedomTests.release.xcconfig"; sourceTree = "<group>"; };
+		97A2499510A4EDB6A55DC3B0 /* Pods-MyJeedomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJeedomUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyJeedomUITests/Pods-MyJeedomUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9CA22AF1A052ACA8136B250F /* Pods_MyJeedomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyJeedomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F71BCA965B601F8390FA6C /* Pods-MyJeedomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJeedomUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyJeedomUITests/Pods-MyJeedomUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF0F34E3FD91F187B8CA93A /* Pods-MyJeedomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJeedomTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyJeedomTests/Pods-MyJeedomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C52B6ABEF7EEC2BE284FB2B6 /* Pods-MyJeedom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJeedom.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyJeedom/Pods-MyJeedom.release.xcconfig"; sourceTree = "<group>"; };
+		EF5446869AFEC0CA1EAED9CA /* Pods_MyJeedom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyJeedom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F025752EBBBA620497A94D1D /* Pods-MyJeedom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJeedom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyJeedom/Pods-MyJeedom.debug.xcconfig"; sourceTree = "<group>"; };
+		F9555094C8D1FEC5BB62EE61 /* Pods_MyJeedomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyJeedomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E8F687B21237C5400EDC74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE4C73DF83E9790EB0FF253 /* Pods_MyJeedom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8F688F21237C5800EDC74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D643C5CA247B53C8753E085 /* Pods_MyJeedomTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8F689A21237C5800EDC74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC8F37C914DF1BE026A46AF /* Pods_MyJeedomUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8EF6748FFCE5F24408B302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F025752EBBBA620497A94D1D /* Pods-MyJeedom.debug.xcconfig */,
+				C52B6ABEF7EEC2BE284FB2B6 /* Pods-MyJeedom.release.xcconfig */,
+				BBF0F34E3FD91F187B8CA93A /* Pods-MyJeedomTests.debug.xcconfig */,
+				2E72C73A1163A6C672B1D0D5 /* Pods-MyJeedomTests.release.xcconfig */,
+				B9F71BCA965B601F8390FA6C /* Pods-MyJeedomUITests.debug.xcconfig */,
+				97A2499510A4EDB6A55DC3B0 /* Pods-MyJeedomUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E77865B21237FB700C1FAC3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A1D212387F200A01683 /* Utils */,
+				1EEC3A1B212387C400A01683 /* Dtos */,
+				1EEC3A182123877500A01683 /* Storages */,
+				1EEC3A16212386D500A01683 /* DataProvider.swift */,
+				1EEC3A202123892D00A01683 /* UserPreferencesDataProvider.swift */,
+				1EEC3A2521239EB800A01683 /* CustomError.swift */,
+				1EEC3A3F2124E94C00A01683 /* JeedomDataProvider.swift */,
+				1EEC3A4F2132DCFB00A01683 /* VoidResponse.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		1E77865C21237FC900C1FAC3 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A2D2124D4D100A01683 /* Utils */,
+				1EEC3A22212394C400A01683 /* UserPrefernces */,
+				1E8F688A21237C5700EDC74A /* LaunchScreen.storyboard */,
+				1E8F688321237C5400EDC74A /* MainViewController.swift */,
+				1E8F688121237C5400EDC74A /* AppDelegate.swift */,
+				1E8F688521237C5400EDC74A /* Main.storyboard */,
+				1EEC3A45212726A300A01683 /* CommandsViewController.swift */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		1E8F687521237C5400EDC74A = {
+			isa = PBXGroup;
+			children = (
+				1E8F688021237C5400EDC74A /* MyJeedom */,
+				1E8F689521237C5800EDC74A /* MyJeedomTests */,
+				1E8F68A021237C5800EDC74A /* MyJeedomUITests */,
+				1E8F687F21237C5400EDC74A /* Products */,
+				0B8EF6748FFCE5F24408B302 /* Pods */,
+				8A4B1D33020EAFD95B0AF0AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E8F687F21237C5400EDC74A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E8F687E21237C5400EDC74A /* MyJeedom.app */,
+				1E8F689221237C5800EDC74A /* MyJeedomTests.xctest */,
+				1E8F689D21237C5800EDC74A /* MyJeedomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E8F688021237C5400EDC74A /* MyJeedom */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A362124DEF600A01683 /* UseCase */,
+				1EEC3A2A2124CFFE00A01683 /* Coordinator */,
+				1EEC3A272124CDEB00A01683 /* ViewModel */,
+				1E77865C21237FC900C1FAC3 /* interface */,
+				1E77865B21237FB700C1FAC3 /* data */,
+				1E8F688821237C5700EDC74A /* Assets.xcassets */,
+				1E8F688D21237C5700EDC74A /* Info.plist */,
+			);
+			path = MyJeedom;
+			sourceTree = "<group>";
+		};
+		1E8F689521237C5800EDC74A /* MyJeedomTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E8F689621237C5800EDC74A /* MyJeedomTests.swift */,
+				1E8F689821237C5800EDC74A /* Info.plist */,
+			);
+			path = MyJeedomTests;
+			sourceTree = "<group>";
+		};
+		1E8F68A021237C5800EDC74A /* MyJeedomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E8F68A121237C5800EDC74A /* MyJeedomUITests.swift */,
+				1E8F68A321237C5800EDC74A /* Info.plist */,
+			);
+			path = MyJeedomUITests;
+			sourceTree = "<group>";
+		};
+		1EEC3A032123854C00A01683 /* KeyStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A042123854C00A01683 /* BaseStorage */,
+				1EEC3A082123854C00A01683 /* KeyStorage.swift */,
+				1EEC3A092123854C00A01683 /* StorageDecorators */,
+				1EEC3A0D2123854C00A01683 /* KeyStorageFactory.swift */,
+			);
+			path = KeyStorage;
+			sourceTree = "<group>";
+		};
+		1EEC3A042123854C00A01683 /* BaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A052123854C00A01683 /* RAMStorage.swift */,
+				1EEC3A062123854C00A01683 /* KeyChainStorage.swift */,
+				1EEC3A072123854C00A01683 /* UserDefaultsStorage.swift */,
+			);
+			path = BaseStorage;
+			sourceTree = "<group>";
+		};
+		1EEC3A092123854C00A01683 /* StorageDecorators */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A0A2123854C00A01683 /* FromDataStorage.swift */,
+				1EEC3A0B2123854C00A01683 /* AutoSyncStorage.swift */,
+				1EEC3A0C2123854C00A01683 /* DrawerStorage.swift */,
+			);
+			path = StorageDecorators;
+			sourceTree = "<group>";
+		};
+		1EEC3A182123877500A01683 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A192123878500A01683 /* UserPreferencesStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		1EEC3A1B212387C400A01683 /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A1C212387D500A01683 /* UserPreferences */,
+				1EEC3A3B2124DFAE00A01683 /* ObjectDto.swift */,
+				1EEC3A412126301200A01683 /* EquipmentDto.swift */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		1EEC3A1C212387D500A01683 /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A1E2123882400A01683 /* UserPreferencesDto.swift */,
+				1EEC3A43212630AA00A01683 /* CommandDto.swift */,
+			);
+			path = UserPreferences;
+			sourceTree = "<group>";
+		};
+		1EEC3A1D212387F200A01683 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A56213343C500A01683 /* String+utils.swift */,
+				1EEC3A542133438300A01683 /* String+queryParameters.swift */,
+				1EEC3A51213341C500A01683 /* Rx */,
+				1EEC3A032123854C00A01683 /* KeyStorage */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1EEC3A22212394C400A01683 /* UserPrefernces */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A23212394E600A01683 /* UserPreferencesViewController.swift */,
+			);
+			path = UserPrefernces;
+			sourceTree = "<group>";
+		};
+		1EEC3A272124CDEB00A01683 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A282124CDF800A01683 /* MainViewModel.swift */,
+				1EEC3A322124D61100A01683 /* UserPreferencesViewModel.swift */,
+				1EEC3A342124DA5000A01683 /* RxViewModel.swift */,
+				1EEC3A472127272800A01683 /* CommandsViewModel.swift */,
+				1EEC3A492131FEF200A01683 /* CommandViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EEC3A2A2124CFFE00A01683 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A2B2124D01600A01683 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1EEC3A2D2124D4D100A01683 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A2E2124D4E300A01683 /* SegueContext.swift */,
+				1EEC3A2F2124D4E300A01683 /* UIViewController+segueContext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1EEC3A362124DEF600A01683 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A372124DF0700A01683 /* RetrieveAllDataUseCase.swift */,
+				1EEC3A392124DF1900A01683 /* UseCase.swift */,
+				1EEC3A3D2124E20C00A01683 /* JeedomServiceUseCase.swift */,
+				1EEC3A4B2132DC7C00A01683 /* PerformCommandUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		1EEC3A51213341C500A01683 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC3A52213341C500A01683 /* ObservableType+utils.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		8A4B1D33020EAFD95B0AF0AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5446869AFEC0CA1EAED9CA /* Pods_MyJeedom.framework */,
+				F9555094C8D1FEC5BB62EE61 /* Pods_MyJeedomTests.framework */,
+				9CA22AF1A052ACA8136B250F /* Pods_MyJeedomUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E8F687D21237C5400EDC74A /* MyJeedom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8F68A621237C5800EDC74A /* Build configuration list for PBXNativeTarget "MyJeedom" */;
+			buildPhases = (
+				835B764BC059D22B79CC090D /* [CP] Check Pods Manifest.lock */,
+				1E8F687A21237C5400EDC74A /* Sources */,
+				1E8F687B21237C5400EDC74A /* Frameworks */,
+				1E8F687C21237C5400EDC74A /* Resources */,
+				EFF5955B7C37F06BA02ABB4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyJeedom;
+			productName = MyJeedom;
+			productReference = 1E8F687E21237C5400EDC74A /* MyJeedom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E8F689121237C5800EDC74A /* MyJeedomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8F68A921237C5800EDC74A /* Build configuration list for PBXNativeTarget "MyJeedomTests" */;
+			buildPhases = (
+				91566A167B23D9CC6BF5CC33 /* [CP] Check Pods Manifest.lock */,
+				1E8F688E21237C5800EDC74A /* Sources */,
+				1E8F688F21237C5800EDC74A /* Frameworks */,
+				1E8F689021237C5800EDC74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E8F689421237C5800EDC74A /* PBXTargetDependency */,
+			);
+			name = MyJeedomTests;
+			productName = MyJeedomTests;
+			productReference = 1E8F689221237C5800EDC74A /* MyJeedomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E8F689C21237C5800EDC74A /* MyJeedomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8F68AC21237C5800EDC74A /* Build configuration list for PBXNativeTarget "MyJeedomUITests" */;
+			buildPhases = (
+				3F900E9DFC48FFABDC6F49DD /* [CP] Check Pods Manifest.lock */,
+				1E8F689921237C5800EDC74A /* Sources */,
+				1E8F689A21237C5800EDC74A /* Frameworks */,
+				1E8F689B21237C5800EDC74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E8F689F21237C5800EDC74A /* PBXTargetDependency */,
+			);
+			name = MyJeedomUITests;
+			productName = MyJeedomUITests;
+			productReference = 1E8F689D21237C5800EDC74A /* MyJeedomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E8F687621237C5400EDC74A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = JoWann;
+				TargetAttributes = {
+					1E8F687D21237C5400EDC74A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1E8F689121237C5800EDC74A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1E8F687D21237C5400EDC74A;
+					};
+					1E8F689C21237C5800EDC74A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1E8F687D21237C5400EDC74A;
+					};
+				};
+			};
+			buildConfigurationList = 1E8F687921237C5400EDC74A /* Build configuration list for PBXProject "MyJeedom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E8F687521237C5400EDC74A;
+			productRefGroup = 1E8F687F21237C5400EDC74A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E8F687D21237C5400EDC74A /* MyJeedom */,
+				1E8F689121237C5800EDC74A /* MyJeedomTests */,
+				1E8F689C21237C5800EDC74A /* MyJeedomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E8F687C21237C5400EDC74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8F688C21237C5700EDC74A /* LaunchScreen.storyboard in Resources */,
+				1E8F688921237C5700EDC74A /* Assets.xcassets in Resources */,
+				1E8F688721237C5400EDC74A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8F689021237C5800EDC74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8F689B21237C5800EDC74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F900E9DFC48FFABDC6F49DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyJeedomUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835B764BC059D22B79CC090D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyJeedom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91566A167B23D9CC6BF5CC33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyJeedomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF5955B7C37F06BA02ABB4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyJeedom/Pods-MyJeedom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyJeedom/Pods-MyJeedom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E8F687A21237C5400EDC74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEC3A102123854C00A01683 /* UserDefaultsStorage.swift in Sources */,
+				1EEC3A2621239EB800A01683 /* CustomError.swift in Sources */,
+				1EEC3A482127272800A01683 /* CommandsViewModel.swift in Sources */,
+				1EEC3A552133438300A01683 /* String+queryParameters.swift in Sources */,
+				1EEC3A302124D4E300A01683 /* SegueContext.swift in Sources */,
+				1EEC3A142123854C00A01683 /* DrawerStorage.swift in Sources */,
+				1EEC3A312124D4E300A01683 /* UIViewController+segueContext.swift in Sources */,
+				1EEC3A212123892D00A01683 /* UserPreferencesDataProvider.swift in Sources */,
+				1EEC3A53213341C500A01683 /* ObservableType+utils.swift in Sources */,
+				1EEC3A0E2123854C00A01683 /* RAMStorage.swift in Sources */,
+				1EEC3A0F2123854C00A01683 /* KeyChainStorage.swift in Sources */,
+				1EEC3A352124DA5000A01683 /* RxViewModel.swift in Sources */,
+				1EEC3A3A2124DF1900A01683 /* UseCase.swift in Sources */,
+				1EEC3A152123854C00A01683 /* KeyStorageFactory.swift in Sources */,
+				1EEC3A2C2124D01600A01683 /* MainCoordinator.swift in Sources */,
+				1EEC3A422126301200A01683 /* EquipmentDto.swift in Sources */,
+				1EEC3A382124DF0700A01683 /* RetrieveAllDataUseCase.swift in Sources */,
+				1EEC3A44212630AA00A01683 /* CommandDto.swift in Sources */,
+				1EEC3A24212394E600A01683 /* UserPreferencesViewController.swift in Sources */,
+				1EEC3A292124CDF800A01683 /* MainViewModel.swift in Sources */,
+				1EEC3A4C2132DC7C00A01683 /* PerformCommandUseCase.swift in Sources */,
+				1EEC3A57213343C500A01683 /* String+utils.swift in Sources */,
+				1EEC3A332124D61100A01683 /* UserPreferencesViewModel.swift in Sources */,
+				1EEC3A1A2123878500A01683 /* UserPreferencesStorage.swift in Sources */,
+				1EEC3A17212386D500A01683 /* DataProvider.swift in Sources */,
+				1EEC3A132123854C00A01683 /* AutoSyncStorage.swift in Sources */,
+				1E8F688421237C5400EDC74A /* MainViewController.swift in Sources */,
+				1EEC3A3C2124DFAE00A01683 /* ObjectDto.swift in Sources */,
+				1EEC3A3E2124E20C00A01683 /* JeedomServiceUseCase.swift in Sources */,
+				1EEC3A122123854C00A01683 /* FromDataStorage.swift in Sources */,
+				1E8F688221237C5400EDC74A /* AppDelegate.swift in Sources */,
+				1EEC3A402124E94C00A01683 /* JeedomDataProvider.swift in Sources */,
+				1EEC3A4A2131FEF200A01683 /* CommandViewModel.swift in Sources */,
+				1EEC3A112123854C00A01683 /* KeyStorage.swift in Sources */,
+				1EEC3A1F2123882400A01683 /* UserPreferencesDto.swift in Sources */,
+				1EEC3A502132DCFB00A01683 /* VoidResponse.swift in Sources */,
+				1EEC3A46212726A300A01683 /* CommandsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8F688E21237C5800EDC74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8F689721237C5800EDC74A /* MyJeedomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8F689921237C5800EDC74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8F68A221237C5800EDC74A /* MyJeedomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E8F689421237C5800EDC74A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E8F687D21237C5400EDC74A /* MyJeedom */;
+			targetProxy = 1E8F689321237C5800EDC74A /* PBXContainerItemProxy */;
+		};
+		1E8F689F21237C5800EDC74A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E8F687D21237C5400EDC74A /* MyJeedom */;
+			targetProxy = 1E8F689E21237C5800EDC74A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E8F688521237C5400EDC74A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E8F688621237C5400EDC74A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E8F688A21237C5700EDC74A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E8F688B21237C5700EDC74A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E8F68A421237C5800EDC74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E8F68A521237C5800EDC74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E8F68A721237C5800EDC74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F025752EBBBA620497A94D1D /* Pods-MyJeedom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EZELTPWNWS;
+				INFOPLIST_FILE = MyJeedom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decathlon.cubeInStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E8F68A821237C5800EDC74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52B6ABEF7EEC2BE284FB2B6 /* Pods-MyJeedom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EZELTPWNWS;
+				INFOPLIST_FILE = MyJeedom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decathlon.cubeInStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E8F68AA21237C5800EDC74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF0F34E3FD91F187B8CA93A /* Pods-MyJeedomTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBSHSF332L;
+				INFOPLIST_FILE = MyJeedomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jowann.MyJeedomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyJeedom.app/MyJeedom";
+			};
+			name = Debug;
+		};
+		1E8F68AB21237C5800EDC74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E72C73A1163A6C672B1D0D5 /* Pods-MyJeedomTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBSHSF332L;
+				INFOPLIST_FILE = MyJeedomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jowann.MyJeedomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyJeedom.app/MyJeedom";
+			};
+			name = Release;
+		};
+		1E8F68AD21237C5800EDC74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F71BCA965B601F8390FA6C /* Pods-MyJeedomUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBSHSF332L;
+				INFOPLIST_FILE = MyJeedomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jowann.MyJeedomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyJeedom;
+			};
+			name = Debug;
+		};
+		1E8F68AE21237C5800EDC74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A2499510A4EDB6A55DC3B0 /* Pods-MyJeedomUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBSHSF332L;
+				INFOPLIST_FILE = MyJeedomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jowann.MyJeedomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyJeedom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E8F687921237C5400EDC74A /* Build configuration list for PBXProject "MyJeedom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8F68A421237C5800EDC74A /* Debug */,
+				1E8F68A521237C5800EDC74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E8F68A621237C5800EDC74A /* Build configuration list for PBXNativeTarget "MyJeedom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8F68A721237C5800EDC74A /* Debug */,
+				1E8F68A821237C5800EDC74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E8F68A921237C5800EDC74A /* Build configuration list for PBXNativeTarget "MyJeedomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8F68AA21237C5800EDC74A /* Debug */,
+				1E8F68AB21237C5800EDC74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E8F68AC21237C5800EDC74A /* Build configuration list for PBXNativeTarget "MyJeedomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8F68AD21237C5800EDC74A /* Debug */,
+				1E8F68AE21237C5800EDC74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E8F687621237C5400EDC74A /* Project object */;
+}

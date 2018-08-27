@@ -1,0 +1,6 @@
+framework module Pods_MyJeedom {
+  umbrella header "Pods-MyJeedom-umbrella.h"
+
+  export *
+  module * { export * }
+}

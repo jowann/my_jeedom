@@ -1,0 +1,6 @@
+framework module Pods_MyJeedomUITests {
+  umbrella header "Pods-MyJeedomUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
